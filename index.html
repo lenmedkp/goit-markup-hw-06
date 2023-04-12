@@ -418,14 +418,27 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-         <label class="footer-form-field">
-          <span class="footer-form-title">Subscribe</span>
-     <textarea name="user-message" class="footer-form-message" placeholder="E-mail"></textarea>
-          </label>
-   <button type="submit" class="footer-form-submit">Subscribe</button>
- </form>
-       </div>
+        <div class="footer-form-wrapper">
+          <form name="footer-form">
+            <p class="footer-form-title">Subscribe</p>
+            <div class="footer-form-wrap">
+              <input
+                type="e-mail"
+                name="e-mail"
+                class="footer-form-input"
+                id="e-mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="footer-form-submit">
+                Subcribe
+                <svg class="footer-form-submit-icon" width="24" height="24">
+                  <use href="./images/sprite-telegram.svg#telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -435,7 +448,9 @@
           </svg>
         </button>
         <form class="modal-form">
-          <p class="modal-form-title">Leave your contacts and we will call you back</p>
+          <p class="modal-form-title">
+            Leave your contacts and we will call you back
+          </p>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
             <span class="modal-form-input-wrapper">
@@ -484,7 +499,11 @@
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Comment</span>
-            <textarea name="user-message" class="modal-form-message" placeholder="Text input"></textarea>
+            <textarea
+              name="user-message"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
           </label>
           <input
             id="user-policy"
@@ -492,8 +511,16 @@
             name="user-policy"
             class="modal-form-check visually-hidden"
           />
-          <label for="user-policy" class="modal-form-check-desk"
-            >I accept the terms and conditions of the&nbsp: 
+          <label for="user-policy" class="modal-form-check-desk">
+            <span class="modal-form-fake-checkbox">
+              <svg>
+                <use
+                  href="./images/sprite-vector.svg#vector"
+                  width="10"
+                  height="8"
+                ></use></svg>
+            </span>
+            I accept the terms and conditions of the&nbsp:
             <a href="">Privacy policy</a></label
           >
           <button type="submit" class="modal-form-submit">Send</button>

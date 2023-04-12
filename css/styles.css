@@ -683,6 +683,19 @@ fill: #FFFFFF;
  flex-direction: column;
 }
 
+.modal-form-title {
+min-width: 360px;
+height: 24px;
+font-family: var(--primary-font-);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1,5;
+text-align: center;
+letter-spacing: 0.02em;
+color: #2E2F42
+}
+
 .modal-form-input-desc {
   display: block;
   font-family: var(--primary-font-);
@@ -710,8 +723,8 @@ fill: #FFFFFF;
  transform: translateY(-50%);
  width: 18px;
  height: 18px;
- background-color: #2E2F42;
- transition: background-color var(--transition-duration-and-func);
+ fill: #2E2F42;
+ transition: fill var(--transition-duration-and-func);
 }
 
 .modal-form-input {
@@ -729,7 +742,7 @@ fill: #FFFFFF;
 }
 
 .modal-form-input:focus + .modal-form-input-icon {
- background-color: #4D5AE5;
+ fill: #4D5AE5;
 }
 
 .modal-form-message {
@@ -749,6 +762,7 @@ fill: #FFFFFF;
   line-height:1.17px;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  padding-top: 8px;
 }
 
 .modal-form-message:focus {
@@ -765,7 +779,8 @@ border-radius: 2px;
 content: "";
 cursor: pointer;
 margin-right: 8px;
-}
+ }
+
 
 .modal-form-check-desk {
   display: flex;
@@ -774,12 +789,18 @@ margin-right: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  margin-bottom: 4px;
+  margin-top: 16px;
+  margin-bottom: 24px;
   color: #8E8F99;
 }
 
 .modal-form-check:checked + .modal-form-check-desk::before {
   background-color: #404BBF;
+  background-color: #FFFFFF
+      url(./images/vector-bgr.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
  }
 
  .visually-hidden {
@@ -792,3 +813,123 @@ margin-right: 8px;
   clip: rect(0,0,0,0); 
   border: 0; 
  }
+
+ .modal-form-submit {
+  align-items: center;
+  text-align: center;
+  min-width: 169px;
+  height: 56px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em; 
+  color: #FFFFFF;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #4D5AE5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition-duration-and-func);
+}
+ 
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+ }
+ 
+ .footer-form-title {
+ min-width: 75px;
+ height: 24px;
+ font-family: var(--primary-font-);
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 1,5;
+ letter-spacing: 0.02em;
+ text-align: center;
+ color: #FFFFFF;
+  }
+ 
+ .footer-form-field {
+  margin-bottom: 8px;
+ }
+ 
+ .footer-form-input-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  fill: #2E2F42;
+  transition: fill var(--transition-duration-and-func);
+ }
+ 
+  .footer-form-message {
+  width: 264px;
+  height: 40px;
+  resize: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: border-color var(--transition-duration-and-func);
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: #2e2f42;
+  }
+ 
+ .footer-form-message::placeholder {
+   font-family: var(--primary-font-);
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height:1.17px;
+   letter-spacing: 0.04em;
+   color: #FFFFFF;
+   padding-top: 8px;
+ }
+ 
+ .footer-form-message:focus {
+  outline: none;
+  border-color: #4D5AE5;
+ }
+   
+ .footer-form-submit {
+   align-items: center;
+   text-align: center;
+   min-width: 169px;
+   height: 56px;
+   font-family: var(--primary-font);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.04em; 
+   color: #FFFFFF;
+   padding: 16px 32px;
+   margin-bottom: 24px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   background-color: #4D5AE5;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   transition: background-color var(--transition-duration-and-func);
+ }
+  
+ .footer-form-submit:hover,
+ .footer-form-submit:focus {
+   color: #FFFFFF;
+   background-color: var(--accent-color);
+ }
+ 
+ 

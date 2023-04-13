@@ -798,6 +798,8 @@ body {
 
 .modal-form-fake-checkbox {
   display: block;
+  justify-content: center;
+  text-align: center;
   width: 16px;
   height: 16px;
   border: 2px solid rgba(46, 47, 66, 0.4);
@@ -808,10 +810,14 @@ body {
   opacity: 0.1;
 }
 
-.modal-form-check-desc:checked + .modal-form-fake-checkbox {
-  background-color: #404bbf;
+.modal-form-check:checked + .modal-form-check-desk .modal-form-fake-checkbox {
+  background-color: var(--accent-color);
   fill: #ffffff;
   opacity: 1;
+}
+
+.modal-form-check:focus + .modal-form-check-desk .modal-form-fake-checkbox {
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .visually-hidden {

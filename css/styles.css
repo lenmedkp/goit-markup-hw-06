@@ -808,7 +808,7 @@ body {
   opacity: 0.1;
 }
 
-.modal-form-check:checked + .modal-form-fake-checkbox {
+.modal-form-check-desc:checked + .modal-form-fake-checkbox {
   background-color: #404bbf;
   fill: #ffffff;
   opacity: 1;

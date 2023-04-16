@@ -49,7 +49,14 @@ body {
   color: #434455;
 }
 
-.page-header {
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -60,6 +67,8 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
 
 .page-header-container {
   align-items: center;
@@ -229,7 +238,7 @@ body {
 
 .menu-item-phone {
   margin-left: 40px;
-}
+} */
 
 .section {
   padding-top: 120px;
@@ -626,21 +635,6 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 408px;
-  height: 576px;
-  background-color: #fcfcfc;
-  border-radius: 4px;
-  padding-top: 72px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 24px;
 }
 
 .modal-close-btn {
